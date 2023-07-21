@@ -10,6 +10,7 @@ public class Main {
 
         int pay = service.Calculate(sum, bid, month);
 
+        System.out.println();
         System.out.println("Сумма кредита " + sum + " Рублей");
         System.out.println("Процентая ставка " + bid + " %");
         System.out.println("Срок Кредитования " + month + " Месяцев");
