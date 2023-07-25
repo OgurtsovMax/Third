@@ -1,10 +1,10 @@
 public class CreditPaymentService {
 
-    public int Calculate(int k, double p, double m) {
+    public int Calculate(int sum, double percent, double month) {
 
 
-        p = p / 100 / 12;
-        double credit = k * (p + p / (Math.pow(1 + p, m) - 1));
+        percent = percent / 100 / 12;
+        double credit = sum * (percent + percent / (Math.pow(1 + percent, month) - 1));
 
         return (int) credit;
     }
